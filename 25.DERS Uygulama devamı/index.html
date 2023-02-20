@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="girisyap">
+            <h1 class="text-center text-white">Giriş Yap</h1>
+            <input type="text" placeholder="Kullanıcı Adınızı Giriniz" class="kadi">
+            <input type="text" placeholder="Şifre Giriniz" class="ksifre">
+            <br>
+
+            <div class="alertt">
+                <div class="alert alert-danger hataligiris" role="alert">
+                    HATALI KULLANICI ADI VEYA ŞİFRE GİRDİNİZ!
+                </div>
+            </div>
+
+
+            <button class="mybutton loginbtn">Giriş Yap</button>
+            <button class="mybutton loginbtnn"> Kartsız İşlem Yap</button>
+        </div>
+        <br>
+        <div class="islemsec">
+            <p class="kullanılabilirbakiye"></p>
+            <h3 class="text-center text-white">Yapılacak İşlemi Seçiniz</h3>
+            <select class="yapilacakislem">
+                <option>Para Çek</option>
+                <option>Para Yatır</option>
+                <option>Kredi Çek</option>
+            </select>
+            <input type="text" class="girilentütar" placeholder="Tutar Giriniz">
+            <button class="mybutton islemsecbtn">İşlemi Seç</button>
+            <p class="kalanbakiye"></p>
+        </div>
+
+        <div class="kredisec">
+            <h1 class="text-center text-white">Kaç Aylık Vade İstersiniz ?</h1>
+            <select class="vade">
+                <option>3 Ay</option>
+                <option>6 Ay</option>
+                <option>9 Ay</option>
+            </select>
+            <button class="kredihesap">Kredi Hesapla</button>
+            <br>
+            <p class="ödeme"></p>
+            <br>
+            <p class="ayliködeme"></p>
+        </div>
+
+        <div class="kartsizislem">
+            <h1 class="text-center text-white">YAPMAK İSTEDİĞİNİZ İŞLEM</h1>
+            <select class="kisyplck">
+                <option>İban İle Para Gönder</option>
+                <option>Üniversite Harç Ödemesi</option>
+                <option>Fatura Öde</option>
+            </select>
+            <button class=" mybutton kisbtn">İşlem Seçiniz</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.
+                reload()">ANASAYFA</a></button>
+        </div>
+
+        <div class="iban">
+            <div class="bir">
+                <h3 class="text-center text-white">Para Gönderme İşlemi</h3>
+                <input type="text" class="ibannmr" placeholder="Gönderilecek İbanı Yazınız">
+                <input type="text" class="gönderilen" placeholder="Gönderilecek Tutar">
+            </div>
+            <br>
+            <div class="alert alert-danger">İşleminiz İptal Edilsin mi?
+                <button class="evet"><a href="javaScript:window.location.reload()">EVET</a></button>
+                <button class="hayir">HAYIR</button>
+            </div>
+            <div class="iki">
+                <p class="gönderdi"></p>
+                <p class="kaldi"></p>
+                <p class="gönderilenmi"></p>
+                <button class=" mybutton gönder">GÖNDER</button>
+                <button class="mybutton iptal">İPTAL</button>
+            </div>
+        </div>
+        <div class="harç">
+            <h1 class="text-center text-white">T.C Kimlik Numarası Giriniz</h1>
+            <input type="text" placeholder="T.C Kimlik Numarasını Giriniz" class="tcnümarasi">
+            <input type="text" placeholder="Yatırılacak Tutar" class="harcbdli">
+            <button class="mybutton harcyatırma">Harç Yatır</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.
+                reload()">ANASAYFA</a></button>
+            <p class="hrc"></p>
+            <p class="kln"></p>
+            
+
+        </div>
+        <div class="fatüra">
+            <h1 class="text-center text-white">Fatura Öde</h1>
+            <select class="fatüralar">
+                <option class="dogalgaz">Doğalgaz Öde</option>
+                <option class="elektrik">Elektrik Öde</option>
+                <option class="su">Su Öde</option>
+            </select>
+            
+            <button class="mybutton ftr">Ödeme Yap</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.
+                reload()">ANASAYFA</a></button>
+        </div>
+        <div class="dogalgazbr">
+            <h2 class="text-center text-white">Doğalgaz Ödeme Alanı</h2>
+            <input type="text" class="sayacnumara" placeholder="Sayaç Numarası">
+            <input type="text" class="dm" placeholder="Ödeme Yapılacak Ücret">
+            <p class="dmdm"></p>
+            <button class=" mybutton dgbtn">Doğalgaz Faturasını Öde</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.reload()">ANASAYFA</a></button>
+        </div>
+
+        <div class="elektrkbr">
+            <h2 class="text-center text-white">Elektrik Faturası Ödeme Alanı</h2>
+            <input type="text" class="syc2" placeholder="Sayaç Numarası">
+            <input type="text" class="dm1" placeholder="Ödeme Yapılacak Ücret">
+            <p class="dmdmdm"></p>
+            <button class=" mybutton dgbtn1">Elektrik Faturasını Öde</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.
+                reload()">ANASAYFA</a></button>
+        </div>
+
+        <div class="subr">
+            <h2 class="text-center text-white">Su Faturasını Ödeme Alanı</h2>
+            <input type="text" class="syc3" placeholder="Sayaç Numarası">
+            <input type="text" class="dm2" placeholder="Ödeme Yapılacak Ücret">
+            <button class=" mybutton dgbtn">Su Faturasını Öde</button>
+            <button class=" mybutton anasayfa"><a href="javaScript:window.location.
+                reload()">ANASAYFA</a></button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
+    bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/
+jquery.min.js"></script>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

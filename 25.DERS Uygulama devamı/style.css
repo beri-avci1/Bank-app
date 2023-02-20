@@ -1,0 +1,83 @@
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#12c2e9,#c471ed,#f64f59);
+}
+ .islemsec{
+    display: none;
+ }
+
+ input, button, select{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+.mybutton{
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+
+.mybutton:hover{
+    color: red;
+}
+
+.kredisec{
+    display: none;
+}
+.alertt{
+    display: none;
+}
+.kartsizislem{
+    display: none;
+}
+.iban{
+    display: none;
+}
+.alert{
+    display: none;
+}
+.harç{
+    display: none;
+}
+
+
+a{
+    color:rgb(231, 14, 14);
+    text-decoration: none;
+    
+    
+}
+
+
+
+.fatüra{
+    display: none;
+}
+
+.dogalgazbr{
+    display: none
+}
+
+.elektrkbr{
+    display: none;
+}
+.subr{
+    display: none;
+}
+ .bildirim{
+    display: none;
+ }
+
+
